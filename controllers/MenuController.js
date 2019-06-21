@@ -27,6 +27,9 @@ module.exports = class MenuController {
         case "Get date and Time":
            this.getDate();
            break;
+        case 'Remind Me':
+           this.remindMe();
+           break;
         case "Exit":
           this.exit();
         default:
@@ -60,6 +63,17 @@ module.exports = class MenuController {
      console.log("Thanks for using AddressBloc!");
      process.exit();
    }
+
+   getContactCount(){
+    return this.contacts.length;
+  }
+
+  remindMe() {
+    console.log('Learning is a life-long pursuit');
+    this.main();
+    return 'Learning is a life-long pursuit';
+  }
+
  }
  
    
