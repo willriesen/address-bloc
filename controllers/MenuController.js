@@ -24,7 +24,7 @@ module.exports = class MenuController {
         case "Add new contact":
           this.addContact();
           break;
-        case "Get date and Time":
+        case "Get date and time":
            this.getDate();
            break;
         case 'Remind Me':
